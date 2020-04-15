@@ -1,0 +1,4 @@
+greutate
+număr de kilograme
+kilograme
+kg

@@ -1,0 +1,6 @@
+pași
+număr de pași
+mers
+kilometri
+metri
+distanță

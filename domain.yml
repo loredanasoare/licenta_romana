@@ -1,0 +1,108 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - calendarIntent
+  - blood_pressureIntent
+  - pulseIntent
+  - healthIntent
+  - stepsIntent
+  - credentialsIntent
+  - timeIntent
+  - weatherIntent
+  - weightIntent
+  - sleepIntent
+  - personIntent
+  - pageIntent
+
+entities:
+  - pulse
+  - calendar
+  - blood_pressure
+  - health
+  - steps
+  - today
+  - yesterday
+  - say_actions
+  - display_actions
+  - target
+  - time
+  - weight
+  - weather
+  - sleep
+  - user
+  - page_type
+
+slots:
+  pulse:
+    type: text
+  calendar:
+    type: text
+  blood_pressure:
+    type: text
+  health:
+    type: text
+  steps:
+    type: text
+  today:
+    type: text
+  yesterday:
+    type: text
+  say_actions:
+    type: text
+  dispaly_actions:
+      type: text
+  target:
+    type: text
+  page_type:
+    type: text
+
+actions:
+- action_ask_about_credentials
+- action_ask_about_pulse
+- action_ask_about_blood_pressure
+- action_ask_about_steps
+- action_ask_about_health
+- action_ask_about_calendar
+- action_ask_about_weather
+- action_ask_about_weight
+- action_ask_about_time
+- action_ask_about_sleep
+- action_ask_about_person
+- action_ask_about_page_type
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+
+templates:
+  utter_greet:
+  - text: "Buna! Ce mai faci?"
+
+  utter_cheer_up:
+  - text: "Uite ceva care sa te inveseleasca:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Am fost de vreun ajutor?"
+
+  utter_happy:
+  - text: "Minunat, continua tot asa!"
+
+  utter_goodbye:
+  - text: "La revedere!"
+
+  utter_repeat:
+  - text: "Poti sa repeti?"
+  - text: "Scuze, nu am inteles. Repeta, te rog?"
+
+  utter_person:
+    - text: "Eu sunt bot-ul Rasa"
+
+  utter_incorrect_credentials:
+    - text: "Nu iti este permis sa vezi aceste informatii."
+
